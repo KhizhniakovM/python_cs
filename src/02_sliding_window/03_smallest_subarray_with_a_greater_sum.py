@@ -38,8 +38,8 @@
 #       - Subtract the first element of the window from the running sum to shrink the sliding window.
 
 # Here is the visual representation of this algorithm for the Example-1:
-# images/01_sliding_window/004.png
-# images/01_sliding_window/005.png
+# images/02_sliding_window/004.png
+# images/02_sliding_window/005.png
 
 import math
 
@@ -59,7 +59,7 @@ def smallest_subarray_sum(s: int, arr: list[int]) -> int:
     if min_length == math.inf:
         return 0
 
-    return min_length
+    return int(min_length)
 
 # * MARK: - Time Complexity
 # The time complexity of the above algorithm will be O(N)

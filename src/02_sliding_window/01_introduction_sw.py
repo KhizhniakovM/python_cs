@@ -43,7 +43,7 @@ def brutforce_find_averages_of_subarrays(K, arr):
 # The inefficiency is that for any two consecutive subarrays of size ‘5’, the overlapping part 
 # (which will contain four elements) will be evaluated twice. For example, take the above-mentioned input:
 
-# images/01_sliding_window/001.png
+# images/02_sliding_window/001.png
 
 # As you can see, there are four overlapping elements between the subarray (indexed from 0-4) 
 # and the subarray (indexed from 1-5). Can we somehow reuse the sum we have calculated for the overlapping elements?
@@ -54,7 +54,7 @@ def brutforce_find_averages_of_subarrays(K, arr):
 # and add the element now being included in the sliding window. This will save us from going through the whole 
 # subarray to find the sum and, as a result, the algorithm complexity will reduce to O(N).
 
-# images/01_sliding_window/002.png
+# images/02_sliding_window/002.png
 
 # Here is the algorithm for the Sliding Window approach:
 

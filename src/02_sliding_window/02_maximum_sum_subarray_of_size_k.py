@@ -20,7 +20,7 @@
 # the next ‘k’ elements to find the subarray’s sum.
 # Following is the visual representation of this algorithm for Example-1:
 
-# images/01_sliding_window/003.png
+# images/02_sliding_window/003.png
 
 # * MARK: - Brut-force solution
 def brutforce_max_sub_array_of_size_k(k, arr):
