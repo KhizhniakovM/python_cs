@@ -93,6 +93,6 @@ def search_pair_sim(arr, target_sum, first, triplets):
 
 # So, overall searchTriplets() will take O(N * logN + N^3), which is asymptotically equivalent to O(N^3)
 
-# Space complexity#
+# Space complexity
 # Ignoring the space required for the output array, the space complexity of the above algorithm will be O(N)
 # which is required for sorting.
