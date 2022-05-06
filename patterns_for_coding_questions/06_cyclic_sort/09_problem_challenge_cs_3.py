@@ -1,4 +1,4 @@
-# Problem challenge 2
+# Problem challenge 3
 # Find the First K Missing Positive Numbers (hard)
 
 # * MARK: - Problem statement
