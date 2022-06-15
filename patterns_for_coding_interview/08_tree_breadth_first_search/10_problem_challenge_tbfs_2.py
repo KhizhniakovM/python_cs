@@ -6,7 +6,7 @@
 # The right view of a binary tree is the set of nodes visible when the tree is seen from the right side.
 
 # * MARK: - Example
-# images/08_tree_breadth_first_search/017.png
+# ../images/08_tree_breadth_first_search/017.png
 
 # * MARK: - Solution
 # This problem follows the Binary Tree Level Order Traversal pattern.

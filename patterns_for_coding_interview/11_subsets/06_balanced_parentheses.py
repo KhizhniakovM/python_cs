@@ -51,7 +51,7 @@
 # 9. We can’t add more parentheses to any of the combinations, so we stop here.
 
 # Here is the visual representation of this algorithm:
-# images/11_subsets/005.png
+# ../images/11_subsets/005.png
 
 from collections import deque
 
@@ -95,21 +95,21 @@ main()
 
 
 # * MARK: - Time Complexity
-# Let’s try to estimate how many combinations we can have for ‘N’ pairs of balanced parentheses. 
-# If we don’t care for the ordering - that ) can only come after ( - then we have two options for every 
+# Let’s try to estimate how many combinations we can have for ‘N’ pairs of balanced parentheses.
+# If we don’t care for the ordering - that ) can only come after ( - then we have two options for every
 # position, i.e., either put open parentheses or close parentheses. This means we can have a maximum of 2^N
 # combinations. Because of the ordering, the actual number will be less than 2^N
 
-# If you see the visual representation of Example-2 closely you will realize that, in the worst case, 
-# it is equivalent to a binary tree, where each node will have two children. 
-# This means that we will have 2^N leaf nodes and 2^N-1 intermediate nodes. 
+# If you see the visual representation of Example-2 closely you will realize that, in the worst case,
+# it is equivalent to a binary tree, where each node will have two children.
+# This means that we will have 2^N leaf nodes and 2^N-1 intermediate nodes.
 # So the total number of elements pushed to the queue will be 2^N + 2^N-1,
 # which is asymptotically equivalent to O(2^N)
-# While processing each element, we do need to concatenate the current string with ( or ). 
-# This operation will take O(N), so the overall time complexity of our algorithm will be O(N*2^N). 
+# While processing each element, we do need to concatenate the current string with ( or ).
+# This operation will take O(N), so the overall time complexity of our algorithm will be O(N*2^N).
 # This is not completely accurate but reasonable enough to be presented in the interview.
 
-# The actual time complexity ( O(4^n/\sqrt{n}) is bounded by the Catalan number 
+# The actual time complexity ( O(4^n/\sqrt{n}) is bounded by the Catalan number
 # and is beyond the scope of a coding interview. See more details here.
 
 # https://en.wikipedia.org/wiki/Catalan_number
@@ -124,34 +124,34 @@ main()
 # Here is the recursive algorithm following a similar approach:
 
 def generate_valid_parentheses_r(num):
-  result = []
-  parenthesesString = [0 for x in range(2*num)]
-  generate_valid_parentheses_rec(num, 0, 0, parenthesesString, 0, result)
-  return result
+    result = []
+    parenthesesString = [0 for x in range(2*num)]
+    generate_valid_parentheses_rec(num, 0, 0, parenthesesString, 0, result)
+    return result
 
 
 def generate_valid_parentheses_rec(num, openCount, closeCount, parenthesesString, index, result):
 
-  # if we've reached the maximum number of open and close parentheses, add to the result
-  if openCount == num and closeCount == num:
-    result.append(''.join(parenthesesString))
-  else:
-    if openCount < num:  # if we can add an open parentheses, add it
-      parenthesesString[index] = '('
-      generate_valid_parentheses_rec(
-        num, openCount + 1, closeCount, parenthesesString, index + 1, result)
+    # if we've reached the maximum number of open and close parentheses, add to the result
+    if openCount == num and closeCount == num:
+        result.append(''.join(parenthesesString))
+    else:
+        if openCount < num:  # if we can add an open parentheses, add it
+            parenthesesString[index] = '('
+            generate_valid_parentheses_rec(
+                num, openCount + 1, closeCount, parenthesesString, index + 1, result)
 
-    if openCount > closeCount:  # if we can add a close parentheses, add it
-      parenthesesString[index] = ')'
-      generate_valid_parentheses_rec(
-        num, openCount, closeCount + 1, parenthesesString, index + 1, result)
+        if openCount > closeCount:  # if we can add a close parentheses, add it
+            parenthesesString[index] = ')'
+            generate_valid_parentheses_rec(
+                num, openCount, closeCount + 1, parenthesesString, index + 1, result)
 
 
 def main_2():
-  print("All combinations of balanced parentheses are: " +
-        str(generate_valid_parentheses_r(2)))
-  print("All combinations of balanced parentheses are: " +
-        str(generate_valid_parentheses_r(3)))
+    print("All combinations of balanced parentheses are: " +
+          str(generate_valid_parentheses_r(2)))
+    print("All combinations of balanced parentheses are: " +
+          str(generate_valid_parentheses_r(3)))
 
 
 main_2()

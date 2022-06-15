@@ -36,7 +36,7 @@
 # to insert and/or merge the new interval. Let’s call the new interval ‘a’ and the first interval
 # with the above condition ‘b’. There are five possibilities:
 
-# images/05_merge_intervals/005.png
+# ../images/05_merge_intervals/005.png
 
 # The diagram above clearly shows the merging approach. To handle all four merging scenarios,
 # we need to do something like this:
@@ -84,7 +84,7 @@ def insert(intervals, new_interval):
     return merged
 
 # * MARK: - Time Complexity
-# As we are iterating through all the intervals only once, the time complexity of the above algorithm is O(N), 
+# As we are iterating through all the intervals only once, the time complexity of the above algorithm is O(N),
 # where ‘N’ is the total number of intervals.
 
 # * MARK: - Space Complexity

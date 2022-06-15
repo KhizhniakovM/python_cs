@@ -26,7 +26,7 @@
 # 4. Add the third number (3) to all the existing subsets: [[], [1], [5], [1,5], [3], [1,3], [5,3], [1,5,3]].
 # 5. Here is the visual representation of the above steps:
 
-# images/11_subsets/001.png
+# ../images/11_subsets/001.png
 
 # Since the input set has distinct elements,
 # the above steps will ensure that we will not have any duplicate subsets.

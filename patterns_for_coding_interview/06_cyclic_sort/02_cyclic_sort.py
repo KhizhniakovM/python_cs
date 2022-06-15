@@ -38,8 +38,8 @@
 
 # Let’s see this visually with the above-mentioned Example-2:
 
-# images/06_cyclic_sort/001.png
-# images/06_cyclic_sort/002.png
+# ../images/06_cyclic_sort/001.png
+# ../images/06_cyclic_sort/002.png
 
 def cyclic_sort(nums):
     i = 0

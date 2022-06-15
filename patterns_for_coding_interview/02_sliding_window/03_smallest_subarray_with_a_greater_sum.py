@@ -38,8 +38,8 @@
 #       - Subtract the first element of the window from the running sum to shrink the sliding window.
 
 # Here is the visual representation of this algorithm for the Example-1:
-# images/02_sliding_window/004.png
-# images/02_sliding_window/005.png
+# ../images/02_sliding_window/004.png
+# ../images/02_sliding_window/005.png
 
 import math
 

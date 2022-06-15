@@ -43,7 +43,7 @@
 # 3. Inserting ‘5’ after ‘1’: [3,1,5]
 
 # Here is the visual representation of this algorithm:
-# images/11_subsets/003.png
+# ../images/11_subsets/003.png
 
 from collections import deque
 
@@ -96,25 +96,26 @@ main()
 # Here is the recursive algorithm following a similar approach:
 
 def generate_permutations(nums):
-  result = []
-  generate_permutations_recursive(nums, 0, [], result)
-  return result
+    result = []
+    generate_permutations_recursive(nums, 0, [], result)
+    return result
 
 
 def generate_permutations_recursive(nums, index, currentPermutation, result):
-  if index == len(nums):
-    result.append(currentPermutation)
-  else:
-    # create a new permutation by adding the current number at every position
-    for i in range(len(currentPermutation)+1):
-      newPermutation = list(currentPermutation)
-      newPermutation.insert(i, nums[index])
-      generate_permutations_recursive(
-        nums, index + 1, newPermutation, result)
+    if index == len(nums):
+        result.append(currentPermutation)
+    else:
+        # create a new permutation by adding the current number at every position
+        for i in range(len(currentPermutation)+1):
+            newPermutation = list(currentPermutation)
+            newPermutation.insert(i, nums[index])
+            generate_permutations_recursive(
+                nums, index + 1, newPermutation, result)
 
 
 def main_2():
-  print("Here are all the permutations: " + str(generate_permutations([1, 3, 5])))
+    print("Here are all the permutations: " +
+          str(generate_permutations([1, 3, 5])))
 
 
 main_2()

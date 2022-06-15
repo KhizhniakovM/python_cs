@@ -21,7 +21,7 @@
 # one of the interval’s start time lies within the other interval.
 # This rule can help us identify if any two intervals overlap or not.
 
-# images/05_merge_intervals/006.png
+# ../images/05_merge_intervals/006.png
 
 # Now, if we have found that the two intervals overlap, how can we find the overlapped part?
 

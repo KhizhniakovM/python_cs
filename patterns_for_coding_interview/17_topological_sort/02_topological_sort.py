@@ -50,8 +50,8 @@
 # we will have new sources, so we will repeat the above process until all vertices are visited.
 
 # Here is the visual representation of this algorithm for Example-3:
-# images/17_topological_sort/001.png
-# images/17_topological_sort/002.png
+# ../images/17_topological_sort/001.png
+# ../images/17_topological_sort/002.png
 
 # This is how we can implement this algorithm:
 

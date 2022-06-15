@@ -47,9 +47,9 @@
 
 # Here is the visual representation of this algorithm for the Example-1:
 
-# images/02_sliding_window/006.png
-# images/02_sliding_window/007.png
-# images/02_sliding_window/008.png
+# ../images/02_sliding_window/006.png
+# ../images/02_sliding_window/007.png
+# ../images/02_sliding_window/008.png
 
 def longest_substring_with_k_distinct(str1: str, k: int) -> int:
     window_start: int = 0

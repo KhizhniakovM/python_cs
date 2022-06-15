@@ -4,7 +4,7 @@
 # Given a binary tree, populate an array to represent the averages of all of its levels.
 
 # * MARK: - Example
-# images/08_tree_breadth_first_search/011.png
+# ../images/08_tree_breadth_first_search/011.png
 
 # * MARK: - Solution
 # This problem follows the Binary Tree Level Order Traversal pattern.

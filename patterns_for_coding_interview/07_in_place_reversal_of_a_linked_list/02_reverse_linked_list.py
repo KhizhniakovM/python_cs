@@ -4,7 +4,7 @@
 # Given the head of a Singly LinkedList, reverse the LinkedList.
 # Write a function to return the new head of the reversed LinkedList.
 
-# images/07_in_place_reversal_of_a_linked_list/001.png
+# ../images/07_in_place_reversal_of_a_linked_list/001.png
 
 # * MARK: - Solution
 # To reverse a LinkedList, we need to reverse one node at a time.
@@ -16,13 +16,13 @@
 # moving on to the next node. Also, we will update the previous to always point to the previous
 # node that we have processed. Here is the visual representation of our algorithm:
 
-# images/07_in_place_reversal_of_a_linked_list/002.png
-# images/07_in_place_reversal_of_a_linked_list/003.png
-# images/07_in_place_reversal_of_a_linked_list/004.png
-# images/07_in_place_reversal_of_a_linked_list/005.png
-# images/07_in_place_reversal_of_a_linked_list/006.png
-# images/07_in_place_reversal_of_a_linked_list/007.png
-# images/07_in_place_reversal_of_a_linked_list/008.png
+# ../images/07_in_place_reversal_of_a_linked_list/002.png
+# ../images/07_in_place_reversal_of_a_linked_list/003.png
+# ../images/07_in_place_reversal_of_a_linked_list/004.png
+# ../images/07_in_place_reversal_of_a_linked_list/005.png
+# ../images/07_in_place_reversal_of_a_linked_list/006.png
+# ../images/07_in_place_reversal_of_a_linked_list/007.png
+# ../images/07_in_place_reversal_of_a_linked_list/008.png
 
 from __future__ import print_function
 

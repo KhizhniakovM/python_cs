@@ -7,7 +7,7 @@
 # from parent to child (top to bottom).
 
 # * MARK: - Example
-# images/09_tree_depth_first_search/016.png
+# ../images/09_tree_depth_first_search/016.png
 
 # * MARK: - Solution
 # This problem follows the Binary Tree Path Sum pattern.

@@ -47,7 +47,7 @@
 # 6. The final iteration will give us:3, 2T, 1A1, 1AT, B2, B1T, BA1, BAT
 
 # Here is the visual representation of this algorithm:
-# images/11_subsets/006.png
+# ../images/11_subsets/006.png
 
 from collections import deque
 

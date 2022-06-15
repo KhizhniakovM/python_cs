@@ -9,7 +9,7 @@
 # pass through the root. The path must contain at least one node.
 
 # * MARK: - Example
-# images/08_tree_breadth_first_search/018.png
+# ../images/08_tree_breadth_first_search/018.png
 
 # * MARK: - Solution
 # This problem follows the Binary Tree Path Sum pattern and shares the algorithmic logic

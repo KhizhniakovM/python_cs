@@ -10,7 +10,7 @@
 # Explanation: Since the first two intervals [1,4] and [2,5] overlap, we merged them into
 # one [1,5].
 
-# images/05_merge_intervals/002.png
+# ../images/05_merge_intervals/002.png
 
 # * MARK: - Example 2
 # Intervals: [[6,7], [2,4], [5,9]]
@@ -26,12 +26,12 @@
 # Let’s take the example of two intervals (‘a’ and ‘b’) such that a.start <= b.start.
 # There are four possible scenarios:
 
-# images/05_merge_intervals/003.png
+# ../images/05_merge_intervals/003.png
 
 # Our goal is to merge the intervals whenever they overlap.
 # For the above-mentioned three overlapping scenarios (2, 3, and 4), this is how we will merge them:
 
-# images/05_merge_intervals/004.png
+# ../images/05_merge_intervals/004.png
 
 # The diagram above clearly shows a merging approach. Our algorithm will look like this:
 

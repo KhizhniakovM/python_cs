@@ -28,7 +28,7 @@
 # Explanation: We will need one room for [2,3] and [3,5], and another room for [2,4] and [4,5].
 
 # Here is a visual representation of Example 4:
-# images/05_merge_intervals/007.png
+# ../images/05_merge_intervals/007.png
 
 # * MARK: - Solution
 # Let’s take the above-mentioned example (4) and try to follow our Merge Intervals approach:

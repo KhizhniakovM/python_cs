@@ -28,7 +28,7 @@
 # Input: Employee Working Hours=[[[1,3], [9,12]], [[2,4]], [[6,8]]]
 # Output: [4,6], [8,9]
 
-# images/05_merge_intervals/008.png
+# ../images/05_merge_intervals/008.png
 
 # One simple solution can be to put all employees’ working hours in a list and sort them on the start time.
 # Then we can iterate through the list to find the gaps. Let’s dig deeper.

@@ -6,7 +6,7 @@
 # Find the total sum of all the numbers represented by all paths.
 
 # * MARK: - Example
-# images/09_tree_depth_first_search/014.png
+# ../images/09_tree_depth_first_search/014.png
 
 # * MARK: - Solution
 # This problem follows the Binary Tree Path Sum pattern. We can follow the same DFS approach.

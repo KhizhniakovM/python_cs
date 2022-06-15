@@ -5,8 +5,8 @@
 # The level order successor is the node that appears right after the given node in the level order traversal.
 
 # * MARK: - Example
-# images/08_tree_breadth_first_search/013.png
-# images/08_tree_breadth_first_search/014.png
+# ../images/08_tree_breadth_first_search/013.png
+# ../images/08_tree_breadth_first_search/014.png
 
 # * MARK: - Solution
 # This problem follows the Binary Tree Level Order Traversal pattern.

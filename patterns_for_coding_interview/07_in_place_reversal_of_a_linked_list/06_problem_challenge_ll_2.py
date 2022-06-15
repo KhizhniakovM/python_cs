@@ -5,7 +5,7 @@
 # Given the head of a Singly LinkedList and a number ‘k’,
 # rotate the LinkedList to the right by ‘k’ nodes.
 
-# images/07_in_place_reversal_of_a_linked_list/012.png
+# ../images/07_in_place_reversal_of_a_linked_list/012.png
 
 # * MARK: - Solution
 # Another way of defining the rotation is to take the sub-list of ‘k’ ending nodes of the LinkedList

@@ -55,15 +55,15 @@
 #    After every insertion, we will balance the number of elements in both heaps,
 #    so that they have an equal number of elements.
 #    If the count of numbers is odd, let’s decide to have more numbers in Max Heap than the Min Heap.
-#    images/10_two_heaps/001.png
+#    ../images/10_two_heaps/001.png
 
 # 2. insertNum(1): As ‘1’ is smaller than ‘3’, let’s insert it into the Max Heap.
-#    images/10_two_heaps/002.png
+#    ../images/10_two_heaps/002.png
 
 #    Now, we have two elements in the Max Heap and no elements in Min Heap.
 #    Let’s take the largest element from the Max Heap and insert it into the Min Heap,
 #    to balance the number of elements in both heaps.
-#    images/10_two_heaps/003.png
+#    ../images/10_two_heaps/003.png
 
 # 3. findMedian(): As we have an even number of elements, the median will be the average of the
 #    top element of both the heaps -> (1+3)/2 = 2.0
@@ -72,14 +72,14 @@
 #    we can insert it into the Min Heap. After the insertion, the total count of elements will be odd.
 #    As we had decided to have more numbers in the Max Heap than the Min Heap,
 #    we can take the top (smallest) number from the Min Heap and insert it into the Max Heap.
-#    images/10_two_heaps/004.png
+#    ../images/10_two_heaps/004.png
 
 # 5. findMedian(): Since we have an odd number of elements,
 # the median will be the top element of Max Heap -> 3.
 # An odd number of elements also means that the Max Heap will have one extra element than the Min Heap.
 
 # 6. insertNum(4): Insert ‘4’ into Min Heap.
-#    images/10_two_heaps/005.png
+#    ../images/10_two_heaps/005.png
 
 # 7. findMedian(): As we have an even number of elements,
 # the median will be the average of the top element of both the heaps -> (3+4)/2 = 3.5

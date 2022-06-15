@@ -5,7 +5,7 @@
 # find if the sequence is present as a root-to-leaf path in the given tree.
 
 # * MARK: - Example
-# images/09_tree_depth_first_search/015.png
+# ../images/09_tree_depth_first_search/015.png
 
 # * MARK: - Solution
 # This problem follows the Binary Tree Path Sum pattern.

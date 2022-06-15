@@ -34,7 +34,7 @@
 # in them to create four new permutations.
 
 # Here is the visual representation of this algorithm:
-# images/11_subsets/004.png
+# ../images/11_subsets/004.png
 
 def find_letter_case_string_permutations(str):
     permutations = []

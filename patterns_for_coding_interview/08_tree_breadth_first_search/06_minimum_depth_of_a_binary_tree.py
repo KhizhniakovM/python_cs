@@ -5,7 +5,7 @@
 # the shortest path from the root node to the nearest leaf node.
 
 # * MARK: - Example
-# images/08_tree_breadth_first_search/012.png
+# ../images/08_tree_breadth_first_search/012.png
 
 # * MARK: - Solution
 # This problem follows the Binary Tree Level Order Traversal pattern.

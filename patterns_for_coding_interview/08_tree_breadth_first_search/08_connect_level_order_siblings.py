@@ -5,7 +5,7 @@
 # The last node of each level should point to a null node.
 
 # * MARK: - Example
-# images/08_tree_breadth_first_search/015.png
+# ../images/08_tree_breadth_first_search/015.png
 
 # * MARK: - Solution
 # This problem follows the Binary Tree Level Order Traversal pattern.

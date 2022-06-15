@@ -6,7 +6,7 @@
 # You should populate the values of all nodes in each level from left to right in separate sub-arrays.
 
 # * MARK: - Example
-# images/08_tree_breadth_first_search/009.png
+# ../images/08_tree_breadth_first_search/009.png
 
 # * MARK: - Solution
 # This problem follows the Binary Tree Level Order Traversal pattern.

@@ -6,7 +6,7 @@
 # then right to left for the next level and keep alternating in the same manner for the following levels.
 
 # * MARK: - Example
-# images/08_tree_breadth_first_search/010.png
+# ../images/08_tree_breadth_first_search/010.png
 
 # * MARK: - Solution
 # This problem follows the Binary Tree Level Order Traversal pattern.

@@ -3,7 +3,7 @@
 # * MARK: - Problem statement
 # Given the head of a LinkedList and two positions ‘p’ and ‘q’, reverse the LinkedList from position ‘p’ to ‘q’.
 
-# images/07_in_place_reversal_of_a_linked_list/009.png
+# ../images/07_in_place_reversal_of_a_linked_list/009.png
 
 # * MARK: - Solution
 # The problem follows the In-place Reversal of a LinkedList pattern.

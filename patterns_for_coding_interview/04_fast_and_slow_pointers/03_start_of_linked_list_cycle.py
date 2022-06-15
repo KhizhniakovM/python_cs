@@ -4,7 +4,7 @@
 # Given the head of a Singly LinkedList that contains a cycle,
 # write a function to find the starting node of the cycle.
 
-# images/04_fast_and_slow_pointers/003.png
+# ../images/04_fast_and_slow_pointers/003.png
 
 # * MARK: - Solution
 # If we know the length of the LinkedList cycle, we can find the start of the cycle through
@@ -21,7 +21,7 @@
 
 # Let’s visually see this with the above-mentioned Example-1:
 
-# images/04_fast_and_slow_pointers/004.png
+# ../images/04_fast_and_slow_pointers/004.png
 
 # We can use the algorithm discussed in LinkedList Cycle to find the length of the cycle
 # and then follow the above-mentioned steps to find the start of the cycle.

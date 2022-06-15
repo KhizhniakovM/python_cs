@@ -22,7 +22,7 @@
 # At any step, whichever number gives us a bigger square will be added to the output array.
 # For the above-mentioned Example-1, we will do something like this:
 
-# images/03_two_pointers/004.png
+# ../images/03_two_pointers/004.png
 
 # Since the numbers at both ends can give us the largest square, an alternate approach could be to use
 # two pointers starting at both ends of the input array.
@@ -30,7 +30,7 @@
 # we add it to the result array and move to the next/previous number according to the pointer.
 # For the above-mentioned Example-1, we will do something like this:
 
-# images/03_two_pointers/005.png
+# ../images/03_two_pointers/005.png
 
 
 def make_squares(arr):

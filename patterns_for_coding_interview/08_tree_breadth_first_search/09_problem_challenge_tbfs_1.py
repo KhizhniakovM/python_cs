@@ -6,7 +6,7 @@
 # The last node of each level should point to the first node of the next level.
 
 # * MARK: - Example
-# images/08_tree_breadth_first_search/016.png
+# ../images/08_tree_breadth_first_search/016.png
 
 # * MARK: - Solution
 # This problem follows the Binary Tree Level Order Traversal pattern.

@@ -5,7 +5,7 @@
 # such that the sum of all the node values of that path equals ‘S’.
 
 # * MARK: - Example
-# images/09_tree_depth_first_search/001.png
+# ../images/09_tree_depth_first_search/001.png
 
 # * MARK: - Solution
 # As we are trying to search for a root-to-leaf path, we can use the Depth First Search (DFS)
@@ -29,16 +29,16 @@
 
 # Let’s take the example-2 mentioned above to visually see our algorithm:
 
-# images/09_tree_depth_first_search/002.png
-# images/09_tree_depth_first_search/003.png
-# images/09_tree_depth_first_search/004.png
-# images/09_tree_depth_first_search/005.png
-# images/09_tree_depth_first_search/006.png
-# images/09_tree_depth_first_search/007.png
-# images/09_tree_depth_first_search/008.png
-# images/09_tree_depth_first_search/009.png
-# images/09_tree_depth_first_search/010.png
-# images/09_tree_depth_first_search/011.png
+# ../images/09_tree_depth_first_search/002.png
+# ../images/09_tree_depth_first_search/003.png
+# ../images/09_tree_depth_first_search/004.png
+# ../images/09_tree_depth_first_search/005.png
+# ../images/09_tree_depth_first_search/006.png
+# ../images/09_tree_depth_first_search/007.png
+# ../images/09_tree_depth_first_search/008.png
+# ../images/09_tree_depth_first_search/009.png
+# ../images/09_tree_depth_first_search/010.png
+# ../images/09_tree_depth_first_search/011.png
 
 
 class TreeNode:
@@ -77,11 +77,11 @@ main()
 
 
 # * MARK: - Time Complexity
-# The time complexity of the above algorithm is O(N), 
-# where ‘N’ is the total number of nodes in the tree. 
+# The time complexity of the above algorithm is O(N),
+# where ‘N’ is the total number of nodes in the tree.
 # This is due to the fact that we traverse each node once.
 
 # * MARK: - Space Complexity
-# The space complexity of the above algorithm will be O(N) in the worst case. 
-# This space will be used to store the recursion stack. 
+# The space complexity of the above algorithm will be O(N) in the worst case.
+# This space will be used to store the recursion stack.
 # The worst case will happen when the given tree is a linked list (i.e., every node has only one child).

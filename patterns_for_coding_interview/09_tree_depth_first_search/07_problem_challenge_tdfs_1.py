@@ -9,7 +9,7 @@
 # Note: You can always assume that there are at least two leaf nodes in the given tree.
 
 # * MARK: - Example
-# images/08_tree_breadth_first_search/017.png
+# ../images/08_tree_breadth_first_search/017.png
 
 # * MARK: - Solution
 # This problem follows the Binary Tree Path Sum pattern.
@@ -87,11 +87,11 @@ main()
 
 
 # * MARK: - Time Complexity
-# The time complexity of the above algorithm is O(N), 
-# where ‘N’ is the total number of nodes in the tree. 
+# The time complexity of the above algorithm is O(N),
+# where ‘N’ is the total number of nodes in the tree.
 # This is due to the fact that we traverse each node once.
 
 # * MARK: - Space Complexity
 # The space complexity of the above algorithm will be O(N)
-# in the worst case. This space will be used to store the recursion stack. 
+# in the worst case. This space will be used to store the recursion stack.
 # The worst case will happen when the given tree is a linked list (i.e., every node has only one child).

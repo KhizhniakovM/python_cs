@@ -5,7 +5,7 @@
 # You should populate the values of all nodes of each level from left to right in separate sub-arrays.
 
 # * MARK: - Example
-# images/08_tree_breadth_first_search/001.png
+# ../images/08_tree_breadth_first_search/001.png
 
 # * MARK: - Solution
 # Since we need to traverse all nodes of each level before moving onto the next level,
@@ -23,13 +23,13 @@
 
 # Let’s take the example-2 mentioned above to visually represent our algorithm:
 
-# images/08_tree_breadth_first_search/002.png
-# images/08_tree_breadth_first_search/003.png
-# images/08_tree_breadth_first_search/004.png
-# images/08_tree_breadth_first_search/005.png
-# images/08_tree_breadth_first_search/006.png
-# images/08_tree_breadth_first_search/007.png
-# images/08_tree_breadth_first_search/008.png
+# ../images/08_tree_breadth_first_search/002.png
+# ../images/08_tree_breadth_first_search/003.png
+# ../images/08_tree_breadth_first_search/004.png
+# ../images/08_tree_breadth_first_search/005.png
+# ../images/08_tree_breadth_first_search/006.png
+# ../images/08_tree_breadth_first_search/007.png
+# ../images/08_tree_breadth_first_search/008.png
 
 from collections import deque
 

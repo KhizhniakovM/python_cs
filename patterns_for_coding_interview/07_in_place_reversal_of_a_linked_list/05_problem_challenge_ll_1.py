@@ -6,7 +6,7 @@
 
 # If, in the end, you are left with a sub-list with less than ‘k’ elements, reverse it too.
 
-# images/07_in_place_reversal_of_a_linked_list/011.png
+# ../images/07_in_place_reversal_of_a_linked_list/011.png
 
 # * MARK: - Solution
 # The problem follows the In-place Reversal of a LinkedList pattern and is quite similar to

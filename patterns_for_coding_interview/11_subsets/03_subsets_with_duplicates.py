@@ -49,7 +49,7 @@
 
 # Here is the visual representation of the above steps:
 
-# images/11_subsets/002.png
+# ../images/11_subsets/002.png
 
 def find_subsets(nums):
     # sort the numbers to handle duplicates

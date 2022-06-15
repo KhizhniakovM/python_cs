@@ -4,7 +4,7 @@
 # Given the head of a Singly LinkedList, write a function to determine if the
 # LinkedList has a cycle in it or not.
 
-# images/04_fast_and_slow_pointers/001.png
+# ../images/04_fast_and_slow_pointers/001.png
 
 # * MARK: - Solution
 # Imagine two racers running in a circular racing track.
@@ -45,7 +45,7 @@
 # A similar analysis can be done where the slow pointer moves first.
 # Here is a visual representation of the above discussion:
 
-# images/04_fast_and_slow_pointers/002.png
+# ../images/04_fast_and_slow_pointers/002.png
 
 
 class Node:
@@ -64,8 +64,8 @@ def has_cycle(head):
     return False
 
 # * MARK: - Time Complexity
-# As we have concluded above, once the slow pointer enters the cycle, 
-# the fast pointer will meet the slow pointer in the same loop. 
+# As we have concluded above, once the slow pointer enters the cycle,
+# the fast pointer will meet the slow pointer in the same loop.
 # Therefore, the time complexity of our algorithm will be O(N)
 # where ‘N’ is the total number of nodes in the LinkedList.
 
@@ -73,35 +73,37 @@ def has_cycle(head):
 # The algorithm runs in constant space O(1)
 
 # * MARK: - Similar Problems
-# Problem 1: 
+# Problem 1:
 # Given the head of a LinkedList with a cycle, find the length of the cycle.
 
-# Solution: 
-# We can use the above solution to find the cycle in the LinkedList. 
-# Once the fast and slow pointers meet, we can save the slow pointer and iterate the whole 
+# Solution:
+# We can use the above solution to find the cycle in the LinkedList.
+# Once the fast and slow pointers meet, we can save the slow pointer and iterate the whole
 # cycle with another pointer until we see the slow pointer again to find the length of the cycle.
 
 # Here is what our algorithm will look like:
-def find_cycle_length(head):
-  slow, fast = head, head
-  while fast is not None and fast.next is not None:
-    fast = fast.next.next
-    slow = slow.next
-    if slow == fast:  # found the cycle
-      return calculate_cycle_length(slow)
 
-  return 0
+
+def find_cycle_length(head):
+    slow, fast = head, head
+    while fast is not None and fast.next is not None:
+        fast = fast.next.next
+        slow = slow.next
+        if slow == fast:  # found the cycle
+            return calculate_cycle_length(slow)
+
+    return 0
 
 
 def calculate_cycle_length(slow):
-  current = slow
-  cycle_length = 0
-  while True:
-    current = current.next
-    cycle_length += 1
-    if current == slow:
-      break
-  return cycle_length
+    current = slow
+    cycle_length = 0
+    while True:
+        current = current.next
+        cycle_length += 1
+        if current == slow:
+            break
+    return cycle_length
 
-# Time and Space Complexity: 
+# Time and Space Complexity:
 # The above algorithm runs in O(N) time complexity and O(1) space complexity.
