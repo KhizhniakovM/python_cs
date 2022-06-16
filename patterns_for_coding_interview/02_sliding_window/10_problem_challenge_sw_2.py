@@ -66,6 +66,15 @@ def find_string_anagrams(str1, pattern):
 
     return result_indices
 
+
+def main():
+    print(find_string_anagrams("ppqp", "pq"))
+    print(find_string_anagrams("abbcabc", "abc"))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # The time complexity of the above algorithm will be O(N + M) where ‘N’ and ‘M’ are the
 # number of characters in the input string and the pattern respectively.

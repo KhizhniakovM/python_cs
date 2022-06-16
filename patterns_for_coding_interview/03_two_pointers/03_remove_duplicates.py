@@ -40,6 +40,15 @@ def remove_duplicates(arr):
 
     return next_non_duplicate
 
+
+def main():
+    print(remove_duplicates([2, 3, 3, 3, 6, 9, 9]))
+    print(remove_duplicates([2, 2, 2, 11]))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # The time complexity of the above algorithm will be O(N), where ‘N’ is the total number of elements in the given array.
 

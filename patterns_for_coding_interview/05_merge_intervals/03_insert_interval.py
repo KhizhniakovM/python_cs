@@ -83,6 +83,19 @@ def insert(intervals, new_interval):
         i += 1
     return merged
 
+
+def main():
+    print("Intervals after inserting the new interval: " +
+          str(insert([[1, 3], [5, 7], [8, 12]], [4, 6])))
+    print("Intervals after inserting the new interval: " +
+          str(insert([[1, 3], [5, 7], [8, 12]], [4, 10])))
+    print("Intervals after inserting the new interval: " +
+          str(insert([[2, 3], [5, 7]], [1, 4])))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # As we are iterating through all the intervals only once, the time complexity of the above algorithm is O(N),
 # where ‘N’ is the total number of intervals.

@@ -39,6 +39,15 @@ def find_corrupt_numbers(nums):
 
     return [-1, -1]
 
+
+def main():
+    print(find_corrupt_numbers([3, 1, 2, 5, 2]))
+    print(find_corrupt_numbers([3, 1, 2, 3, 6, 4]))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # The time complexity of the above algorithm is O(n)
 

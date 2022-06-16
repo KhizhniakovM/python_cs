@@ -56,6 +56,15 @@ def search_pair(arr, target_sum, left, triplets):
         else:
             right -= 1  # we need a pair with a smaller sum
 
+
+def main():
+    print(search_triplets([-3, 0, 1, 2, -1, 1, -2]))
+    print(search_triplets([-5, 2, -1, -2, 3]))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # Sorting the array will take O(N * logN). The searchPair() function will take O(N).
 # As we are calling searchPair() for every number in the input array,

@@ -49,15 +49,29 @@ def brutforce_max_sub_array_of_size_k(k, arr):
 # Here is what our algorithm will look like:
 
 
-def max_sub_array_of_size_k(k: int, arr: list[int]) -> int:
-    windowSum, windowStart, maxSum = 0, 0, 0
-    for windowEnd in range(len(arr)):
-        windowSum += arr[windowEnd]
-        if windowEnd >= k - 1:
-            maxSum = max(maxSum, windowSum)
-            windowSum -= arr[windowStart]
-            windowStart += 1
-    return maxSum
+def max_sub_array_of_size_k(k, arr):
+    max_sum, window_sum = 0, 0
+    window_start = 0
+
+    for window_end in range(len(arr)):
+        window_sum += arr[window_end]  # add the next element
+        # slide the window, we don't need to slide if we've not hit the required window size of 'k'
+        if window_end >= k-1:
+            max_sum = max(max_sum, window_sum)
+            window_sum -= arr[window_start]  # subtract the element going out
+            window_start += 1  # slide the window ahead
+    return max_sum
+
+
+def main():
+    print("Maximum sum of a subarray of size K: " +
+          str(max_sub_array_of_size_k(3, [2, 1, 5, 1, 3, 2])))
+    print("Maximum sum of a subarray of size K: " +
+          str(max_sub_array_of_size_k(2, [2, 3, 4, 1, 5])))
+
+
+main()
+
 
 # * MARK: - Time Complexity
 # The time complexity of the above algorithm will be O(N)

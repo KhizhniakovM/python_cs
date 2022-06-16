@@ -46,6 +46,16 @@ def length_of_longest_substring(arr, k):
         max_length = max(max_length, window_end - window_start + 1)
     return max_length
 
+
+def main():
+    print(length_of_longest_substring([0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1], 2))
+    print(length_of_longest_substring(
+        [0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1], 3))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # The above algorithm’s time complexity will be O(N), where ‘N’ is the count of numbers in the input array.
 

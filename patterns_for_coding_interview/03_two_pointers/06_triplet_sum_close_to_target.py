@@ -53,6 +53,16 @@ def triplet_sum_close_to_target(arr, target_sum):
 
     return target_sum - smallest_difference
 
+
+def main():
+    print(triplet_sum_close_to_target([-2, 0, 1, 2], 2))
+    print(triplet_sum_close_to_target([-3, -1, 1, 2], 1))
+    print(triplet_sum_close_to_target([1, 0, 1, 1], 100))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # Sorting the array will take O(N* logN). Overall, the function will take O(N * logN + N^2),
 # which is asymptotically equivalent to O(N^2)

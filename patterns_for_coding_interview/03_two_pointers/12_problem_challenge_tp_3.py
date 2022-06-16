@@ -91,6 +91,16 @@ def shortest_window_sort(arr):
 
     return high - low + 1
 
+
+def main():
+    print(shortest_window_sort([1, 2, 5, 3, 7, 10, 9, 12]))
+    print(shortest_window_sort([1, 3, 2, 0, -1, 7, 10]))
+    print(shortest_window_sort([1, 2, 3]))
+    print(shortest_window_sort([3, 2, 1]))
+
+
+main()
+
 # * MARK: - Time Complexity
 # The time complexity of the above algorithm will be O(N)
 

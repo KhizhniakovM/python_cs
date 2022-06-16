@@ -44,6 +44,16 @@ def find_missing_numbers(nums):
 
     return missingNumbers
 
+
+def main():
+    print(find_missing_numbers([2, 3, 1, 8, 2, 3, 5, 1]))
+    print(find_missing_numbers([2, 4, 1, 2]))
+    print(find_missing_numbers([2, 3, 2, 1]))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # The time complexity of the above algorithm is O(n)
 

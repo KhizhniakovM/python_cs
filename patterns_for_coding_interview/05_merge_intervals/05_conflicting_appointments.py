@@ -36,21 +36,34 @@ def can_attend_all_appointments(intervals):
             return False
     return True
 
+
+def main():
+    print("Can attend all appointments: " +
+          str(can_attend_all_appointments([[1, 4], [2, 5], [7, 9]])))
+    print("Can attend all appointments: " +
+          str(can_attend_all_appointments([[6, 7], [2, 4], [8, 12]])))
+    print("Can attend all appointments: " +
+          str(can_attend_all_appointments([[4, 5], [2, 3], [3, 6]])))
+
+
+main()
+
+
 # * MARK: - Time Complexity
-# The time complexity of the above algorithm is O(N*logN), where ‘N’ is the total number of appointments. 
+# The time complexity of the above algorithm is O(N*logN), where ‘N’ is the total number of appointments.
 # Though we are iterating the intervals only once, our algorithm will take O(N * logN)
 # since we need to sort them in the beginning.
 
 # * MARK: - Space Complexity
-# The space complexity of the above algorithm will be O(N), which we need for sorting. 
+# The space complexity of the above algorithm will be O(N), which we need for sorting.
 # For Java, Arrays.sort() uses Timsort, which needs O(N) space.
 
 # * MARK: - Similar Problems
-# Problem 1: 
+# Problem 1:
 # Given a list of appointments, find all the conflicting appointments.
 
 # Example:
 # Appointments: [[4,5], [2,3], [3,6], [5,7], [7,8]]
-# Output: 
-# [4,5] and [3,6] conflict. 
+# Output:
+# [4,5] and [3,6] conflict.
 # [3,6] and [5,7] conflict.

@@ -66,6 +66,15 @@ def find_word_concatenation(str1, words):
 
     return result_indices
 
+
+def main():
+    print(find_word_concatenation("catfoxcat", ["cat", "fox"]))
+    print(find_word_concatenation("catcatfoxfox", ["cat", "fox"]))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # The time complexity of the above algorithm will be O(N * M * Len) where ‘N’ is the number of characters
 # in the given string, ‘M’ is the total number of words, and ‘Len’ is the length of a word.

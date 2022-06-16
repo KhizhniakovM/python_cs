@@ -33,7 +33,7 @@ def find_subarrays(arr, target):
     left = 0
     for right in range(len(arr)):
         product *= arr[right]
-        while (product >= target and left < len(arr)):
+        while (product >= target and left <= right):
             product /= arr[left]
             left += 1
         # since the product of all numbers from left to right is less than the target therefore,
@@ -44,6 +44,15 @@ def find_subarrays(arr, target):
             temp_list.appendleft(arr[i])
             result.append(list(temp_list))
     return result
+
+
+def main():
+    print(find_subarrays([2, 5, 3, 10], 30))
+    print(find_subarrays([8, 2, 6, 5], 50))
+
+
+main()
+
 
 # * MARK: - Time Complexity
 # The main for-loop managing the sliding window takes O(N) but creating subarrays can take up to O(N^2)

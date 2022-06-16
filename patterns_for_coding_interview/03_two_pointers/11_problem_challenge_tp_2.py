@@ -67,6 +67,17 @@ def get_next_valid_char_index(str, index):
 
     return index
 
+
+def main():
+    print(backspace_compare("xy#z", "xzz#"))
+    print(backspace_compare("xy#z", "xyz#"))
+    print(backspace_compare("xp#", "xyz##"))
+    print(backspace_compare("xywrrmp", "xywrrmu#p"))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # The time complexity of the above algorithm will be O(M+N)
 # where ‘M’ and ‘N’ are the lengths of the two input strings respectively.

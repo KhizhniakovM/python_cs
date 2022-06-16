@@ -42,6 +42,20 @@ def dutch_flag_sort(arr):
             # decrement 'high' only, after the swap the number at index 'i' could be 0, 1 or 2
             high -= 1
 
+
+def main():
+    arr = [1, 0, 2, 1, 0]
+    dutch_flag_sort(arr)
+    print(arr)
+
+    arr = [2, 2, 0, 1, 2, 0]
+    dutch_flag_sort(arr)
+    print(arr)
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # The time complexity of the above algorithm will be O(N) as we are iterating the input array only once.
 

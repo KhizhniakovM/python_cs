@@ -58,6 +58,19 @@ def find_max_cpu_load(jobs):
         max_cpu_load = max(max_cpu_load, current_cpu_load)
     return max_cpu_load
 
+
+def main():
+    print("Maximum CPU load at any time: " +
+          str(find_max_cpu_load([job(1, 4, 3), job(2, 5, 4), job(7, 9, 6)])))
+    print("Maximum CPU load at any time: " +
+          str(find_max_cpu_load([job(6, 7, 10), job(2, 4, 11), job(8, 12, 15)])))
+    print("Maximum CPU load at any time: " +
+          str(find_max_cpu_load([job(1, 4, 2), job(2, 4, 1), job(3, 6, 5)])))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # The time complexity of the above algorithm is O(N*logN), where ‘N’ is the total number of jobs.
 # This is due to the sorting that we did in the beginning. Also, while iterating the jobs, we might need

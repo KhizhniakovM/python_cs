@@ -79,6 +79,28 @@ def find_start(head, cycle_length):
         pointer2 = pointer2.next
     return pointer1
 
+
+def main():
+    head = Node(1)
+    head.next = Node(2)
+    head.next.next = Node(3)
+    head.next.next.next = Node(4)
+    head.next.next.next.next = Node(5)
+    head.next.next.next.next.next = Node(6)
+
+    head.next.next.next.next.next.next = head.next.next
+    print("LinkedList cycle start: " + str(find_cycle_start(head).value))
+
+    head.next.next.next.next.next.next = head.next.next.next
+    print("LinkedList cycle start: " + str(find_cycle_start(head).value))
+
+    head.next.next.next.next.next.next = head
+    print("LinkedList cycle start: " + str(find_cycle_start(head).value))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # As we know, finding the cycle in a LinkedList with ‘N’ nodes and also finding the length
 # of the cycle requires O(N). Also, as we saw in the above algorithm, we will need O(N)

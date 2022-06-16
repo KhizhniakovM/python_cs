@@ -39,35 +39,44 @@
 # in any window, we can’t get a better answer from any other window even though all occurrences of
 # the letter with frequency maxRepeatLetterCount is not in the current window.
 
-def length_of_longest_substring(str1: str, k: int) -> int:
-    char_frequency: dict[str, int] = {}
-    max_repeat_letter_count: int = 0
-    window_start: int = 0
-    max_length: int = 0
+def length_of_longest_substring(str1, k):
+    window_start, max_length, max_repeat_letter_count = 0, 0, 0
+    frequency_map = {}
 
+    # Try to extend the range [window_start, window_end]
     for window_end in range(len(str1)):
         right_char = str1[window_end]
+        if right_char not in frequency_map:
+            frequency_map[right_char] = 0
+        frequency_map[right_char] += 1
 
-        if right_char not in char_frequency:
-            char_frequency[right_char] = 0
-        char_frequency[right_char] += 1
+        # we don't need to place the maxRepeatLetterCount under the below 'if', see the
+        # explanation in the 'Solution' section above.
+        max_repeat_letter_count = max(
+            max_repeat_letter_count, frequency_map[right_char])
 
         # Current window size is from window_start to window_end, overall we have a letter which is
         # repeating 'max_repeat_letter_count' times, this means we can have a window which has one letter
         # repeating 'max_repeat_letter_count' times and the remaining letters we should replace.
         # if the remaining letters are more than 'k', it is the time to shrink the window as we
         # are not allowed to replace more than 'k' letters
-        max_repeat_letter_count = max(
-            max_repeat_letter_count, char_frequency[right_char])
-
         if (window_end - window_start + 1 - max_repeat_letter_count) > k:
             left_char = str1[window_start]
-            char_frequency[left_char] -= 1
+            frequency_map[left_char] -= 1
             window_start += 1
 
         max_length = max(max_length, window_end - window_start + 1)
-
     return max_length
+
+
+def main():
+    print(length_of_longest_substring("aabccbb", 2))
+    print(length_of_longest_substring("abbcb", 1))
+    print(length_of_longest_substring("abccde", 1))
+
+
+main()
+
 
 # * MARK: - Time Complexity
 # The above algorithm’s time complexity will be O(N), where ‘N’ is the number of letters in the input string.

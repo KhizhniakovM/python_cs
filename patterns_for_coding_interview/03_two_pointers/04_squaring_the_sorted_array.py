@@ -51,6 +51,16 @@ def make_squares(arr):
 
     return squares
 
+
+def main():
+
+    print("Squares: " + str(make_squares([-2, -1, 0, 2, 3])))
+    print("Squares: " + str(make_squares([-3, -1, 0, 1, 2])))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # The above algorithm’s time complexity will be O(N) as we are iterating the input array only once.
 

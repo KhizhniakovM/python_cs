@@ -51,28 +51,41 @@
 # ../images/02_sliding_window/007.png
 # ../images/02_sliding_window/008.png
 
-def longest_substring_with_k_distinct(str1: str, k: int) -> int:
-    window_start: int = 0
-    max_length: int = 0
-    char_frequency: dict[str, int] = {}
+def longest_substring_with_k_distinct(str1, k):
+    window_start = 0
+    max_length = 0
+    char_frequency = {}
 
+    # in the following loop we'll try to extend the range [window_start, window_end]
     for window_end in range(len(str1)):
         right_char = str1[window_end]
         if right_char not in char_frequency:
             char_frequency[right_char] = 0
         char_frequency[right_char] += 1
 
+        # shrink the sliding window, until we are left with 'k' distinct characters in the char_frequency
         while len(char_frequency) > k:
             left_char = str1[window_start]
             char_frequency[left_char] -= 1
-
             if char_frequency[left_char] == 0:
                 del char_frequency[left_char]
-            window_start += 1
-
-        max_length = max(max_length, window_end - window_start + 1)
-
+            window_start += 1  # shrink the window
+        # remember the maximum length so far
+        max_length = max(max_length, window_end-window_start + 1)
     return max_length
+
+
+def main():
+    print("Length of the longest substring: " +
+          str(longest_substring_with_k_distinct("araaci", 2)))
+    print("Length of the longest substring: " +
+          str(longest_substring_with_k_distinct("araaci", 1)))
+    print("Length of the longest substring: " +
+          str(longest_substring_with_k_distinct("cbbebi", 3)))
+
+
+main()
+
 
 # * MARK: - Time Complexity
 # The above algorithm’s time complexity will be O(N), where N is the number of characters

@@ -51,6 +51,16 @@ def cyclic_sort(nums):
             i += 1
     return nums
 
+
+def main():
+    print(cyclic_sort([3, 1, 5, 4, 2]))
+    print(cyclic_sort([2, 6, 4, 3, 1, 5]))
+    print(cyclic_sort([1, 5, 6, 4, 3, 2]))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # The time complexity of the above algorithm is O(n). Although we are not incrementing the index i when
 # swapping the numbers, this will result in more than n iterations of the loop,

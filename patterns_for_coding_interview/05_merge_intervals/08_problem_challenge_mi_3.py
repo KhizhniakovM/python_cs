@@ -110,6 +110,34 @@ def find_employee_free_time(schedule):
 
     return result
 
+
+def main():
+
+    input = [[Interval(1, 3), Interval(5, 6)], [
+        Interval(2, 3), Interval(6, 8)]]
+    print("Free intervals: ", end='')
+    for interval in find_employee_free_time(input):
+        interval.print_interval()
+    print()
+
+    input = [[Interval(1, 3), Interval(9, 12)], [
+        Interval(2, 4)], [Interval(6, 8)]]
+    print("Free intervals: ", end='')
+    for interval in find_employee_free_time(input):
+        interval.print_interval()
+    print()
+
+    input = [[Interval(1, 3)], [
+        Interval(2, 4)], [Interval(3, 5), Interval(7, 9)]]
+    print("Free intervals: ", end='')
+    for interval in find_employee_free_time(input):
+        interval.print_interval()
+    print()
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # The above algorithm’s time complexity is O(N*logK), where ‘N’ is the total number of intervals,
 # and ‘K’ is the total number of employees. This is because we are iterating through the intervals only

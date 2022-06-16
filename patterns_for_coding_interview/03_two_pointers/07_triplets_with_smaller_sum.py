@@ -46,6 +46,15 @@ def search_pair(arr, target_sum, first):
             right -= 1  # we need a pair with a smaller sum
     return count
 
+
+def main():
+    print(triplet_with_smaller_sum([-1, 0, 2, 3], 3))
+    print(triplet_with_smaller_sum([-1, 4, 2, 1, 3], 5))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # Sorting the array will take O(N * logN). The searchPair() will take O(N).
 # So, overall searchTriplets() will take O(N * logN + N^2), which is asymptotically equivalent to O(N^2)

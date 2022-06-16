@@ -51,7 +51,6 @@
 # and once the cycle is found, we will see if the cycle is stuck on number ‘1’ to find out if
 # the number is happy or not.
 
-
 def find_happy_number(num):
     slow, fast = num, num
     while True:
@@ -69,6 +68,15 @@ def find_square_sum(num):
         _sum += digit * digit
         num //= 10
     return _sum
+
+
+def main():
+    print(find_happy_number(23))
+    print(find_happy_number(12))
+
+
+main()
+
 
 # * MARK: - Time Complexity
 # The time complexity of the algorithm is difficult to determine.

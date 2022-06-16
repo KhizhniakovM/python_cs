@@ -86,6 +86,17 @@ def find_permutation(str1, pattern):
 
     return False
 
+
+def main():
+    print('Permutation exist: ' + str(find_permutation("oidbcaf", "abc")))
+    print('Permutation exist: ' + str(find_permutation("odicf", "dc")))
+    print('Permutation exist: ' + str(find_permutation("bcdxabcdy", "bcdyabcdx")))
+    print('Permutation exist: ' + str(find_permutation("aaacb", "abc")))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # The above algorithm’s time complexity will be O(N + M),
 # where ‘N’ and ‘M’ are the number of characters in the input string and the pattern, respectively.

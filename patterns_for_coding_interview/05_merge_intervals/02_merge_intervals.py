@@ -78,6 +78,27 @@ def merge(intervals):
     mergedIntervals.append(Interval(start, end))
     return mergedIntervals
 
+
+def main():
+    print("Merged intervals: ", end='')
+    for i in merge([Interval(1, 4), Interval(2, 5), Interval(7, 9)]):
+        i.print_interval()
+    print()
+
+    print("Merged intervals: ", end='')
+    for i in merge([Interval(6, 7), Interval(2, 4), Interval(5, 9)]):
+        i.print_interval()
+    print()
+
+    print("Merged intervals: ", end='')
+    for i in merge([Interval(1, 4), Interval(2, 6), Interval(3, 5)]):
+        i.print_interval()
+    print()
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # The time complexity of the above algorithm is O(N * logN),
 # where ‘N’ is the total number of intervals. We are iterating the intervals only once which will take O(N),

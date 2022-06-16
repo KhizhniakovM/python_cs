@@ -62,6 +62,17 @@ def merge(intervals_a, intervals_b):
 
     return result
 
+
+def main():
+    print("Intervals Intersection: " +
+          str(merge([[1, 3], [5, 6], [7, 9]], [[2, 3], [5, 7]])))
+    print("Intervals Intersection: " +
+          str(merge([[1, 3], [5, 7], [9, 12]], [[5, 10]])))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # As we are iterating through both the lists once, the time complexity of the above algorithm is O(N + M),
 # where ‘N’ and ‘M’ are the total number of intervals in the input arrays respectively.

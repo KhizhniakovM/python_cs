@@ -79,8 +79,25 @@ def reverse(head):
         head = next
     return prev
 
+
+def main():
+    head = Node(2)
+    head.next = Node(4)
+    head.next.next = Node(6)
+    head.next.next.next = Node(4)
+    head.next.next.next.next = Node(2)
+
+    print("Is palindrome: " + str(is_palindromic_linked_list(head)))
+
+    head.next.next.next.next.next = Node(2)
+    print("Is palindrome: " + str(is_palindromic_linked_list(head)))
+
+
+main()
+
+
 # * MARK: - Time Complexity
-# The above algorithm will have a time complexity of O(N) 
+# The above algorithm will have a time complexity of O(N)
 # where ‘N’ is the number of nodes in the LinkedList.
 
 # * MARK: - Space Complexity

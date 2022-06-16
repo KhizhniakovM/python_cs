@@ -56,8 +56,17 @@ def search_pairs(arr, target_sum, first, second, quadruplets):
         else:
             right -= 1  # we need a pair with a smaller sum
 
+
+def main():
+    print(search_quadruplets([4, 1, 2, -1, 1, -3], 1))
+    print(search_quadruplets([2, 0, -1, 1, -2, 2], 2))
+
+
+main()
+
+
 # * MARK: - Time Complexity
-# Sorting the array will take O(N*logN). Overall searchQuadruplets() will take O(N * logN + N^3), 
+# Sorting the array will take O(N*logN). Overall searchQuadruplets() will take O(N * logN + N^3),
 # which is asymptotically equivalent to O(N^3)
 
 # * MARK: - Space Complexity

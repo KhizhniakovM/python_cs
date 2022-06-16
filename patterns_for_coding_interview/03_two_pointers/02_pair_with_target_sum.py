@@ -47,6 +47,15 @@ def pair_with_targetsum(arr, target_sum):
             right -= 1  # we need a pair with a smaller sum
     return [-1, -1]
 
+
+def main():
+    print(pair_with_targetsum([1, 2, 3, 4, 6], 6))
+    print(pair_with_targetsum([2, 5, 9, 11], 11))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # The time complexity of the above algorithm will be O(N), where ‘N’ is the total number of elements in the given array.
 

@@ -51,6 +51,15 @@ def find_missing_number(nums):
 
     return n
 
+
+def main():
+    print(find_missing_number([4, 0, 3, 1]))
+    print(find_missing_number([8, 3, 5, 2, 4, 6, 0, 1]))
+
+
+main()
+
+
 # * MARK: - Time Complexity
 # The time complexity of the above algorithm is O(n). In the while loop,
 # although we are not incrementing the index i when swapping the numbers,
