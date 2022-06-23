@@ -39,16 +39,16 @@ def merge_lists(lst1, lst2):
 
 print(merge_lists([4, 5, 6], [-2, -1, 0, 7]))
 
-# The solution above is a more intuitive way to solve this problem. Start by creating a new empty list. This list will be filled with all the elements of both lists in sorted order and returned. Then initialize three variables to zero to store the current index of each list. Then compare the elements of the two given lists at the current index of each, append the smaller one to the new list and increment the index of that list by 1. Repeat until the end of one of the lists is reached and append the other list to the merged list.
+# The solution above is a more intuitive way to solve this problem. Start by creating a new empty list.
+# This list will be filled with all the elements of both lists in sorted order and returned. Then initialize
+# three variables to zero to store the current index of each list. Then compare the elements of the two
+# given lists at the current index of each, append the smaller one to the new list and increment the
+# index of that list by 1. Repeat until the end of one of the lists is reached and append the other
+# list to the merged list.
 
-# Time Complexity#
-# The time complexity for this algorithm is O(n+m)
-# O(n+m)
-#  where n
-# n
-#  and m
-# m
-#  are the lengths of the lists. This is because both lists are iterated over atleast once.
+# ? Time Complexity
+# The time complexity for this algorithm is O(n+m) where n and m
+# are the lengths of the lists. This is because both lists are iterated over atleast once.
 
 # Solution #2: Merging in Place
 
@@ -75,27 +75,28 @@ def merge_arrays(lst1, lst2):
 
 print(merge_arrays([4, 5, 6], [-2, -1, 0, 7]))
 
-# This solution merges the two lists in place, i.e., no new list is created. First, initialize two new variables to track the ‘current index’ of both the lists to zero. Then, compare the current elements of both. If the current element of the first list is greater than the current element of the second list, insert the current element of the second list in place of the current element of the first list and increment both index variables by 1. Note that the insert operation is done using the built-in insert function. However, if the current element of the first list is smaller than the current element of the second list, then only increment the index variable of the first list by 1. Continue this until the end of one of the lists is reached, i.e., until one of the index variables is greater than or equal to the length of its respective list. After that, if the index of the second list is smaller than the length of the list, extend the first list by the second one from that index until the end.
+# This solution merges the two lists in place, i.e., no new list is created. First, initialize two new
+# variables to track the ‘current index’ of both the lists to zero. Then, compare the current elements
+# of both. If the current element of the first list is greater than the current element of the second
+# list, insert the current element of the second list in place of the current element of the first
+# list and increment both index variables by 1. Note that the insert operation is done using the
+# built-in insert function. However, if the current element of the first list is smaller than the
+# current element of the second list, then only increment the index variable of the first list by 1.
+# Continue this until the end of one of the lists is reached, i.e., until one of the index variables
+# is greater than or equal to the length of its respective list. After that, if the index of the second
+# list is smaller than the length of the list, extend the first list by the second one from that index until
+# the end.
 
-# Time Complexity#
+# ? Time Complexity
 # Since both lists are traversed in this solution as well, the time complexity is O(m(n+m))
-# O(m(n+m))
-#  where n and m are the lengths of the lists. Both lists are not traversed separately so we cannot say that complexity is (m+n)
-# (m+n)
-# . The shorter of the two lengths is traversed in the while loop. Also, the insert function gets called when the if-condition is true. In the worst-case, the second list has all the elements that are smaller than the elements of the first list. In this case, the complexity will be O(mn)
-# O(mn)
-# .
+# where n and m are the lengths of the lists. Both lists are not traversed separately so we cannot
+# say that complexity is (m+n). The shorter of the two lengths is traversed in the while loop. Also,
+# the insert function gets called when the if-condition is true. In the worst-case, the second list has
+# all the elements that are smaller than the elements of the first list. In this case, the complexity
+# will be O(mn)
 
-# In order to further simplify the analysis, we could note that if m > n, we have O(m^2)
-# O(m 
-# 2
-#  )
-# , otherwise the complexity is O(n^2
-# n 
-# 2
- 
-# ).
+# In order to further simplify the analysis, we could note that if m > n, we have O(m^2),
+# otherwise the complexity is O(n^2).
 
 # However, the extra space used in solution#1 is reduced to O(m)
-# O(m)
-#  in solution#2. Thus, it makes this a tradeoff between space and time.
+# in solution#2. Thus, it makes this a tradeoff between space and time.

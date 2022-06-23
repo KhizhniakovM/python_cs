@@ -45,7 +45,7 @@
 # Lists can be concatenated using the + operator
 # print([1,2] + [3,4])
 
-# ? Traverse a List#
+# ? Traverse a List
 # Finally, lists can be iterated over using for loops in Python.
 
 # l=[1, 2, 4, 8, 10]
