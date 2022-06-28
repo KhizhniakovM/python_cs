@@ -155,4 +155,4 @@
 
 # However, the graphical interface did not spread widely until the 1980s. The reason is that a GUI requires
 # a lot of memory and high computer performance. PCs with such features were too expensive for regular users
-# at that time.Apple produced the first relatively cheap PC with a GUI in 1983, called Lisa.
+# at that time. Apple produced the first relatively cheap PC with a GUI in 1983, called Lisa.
