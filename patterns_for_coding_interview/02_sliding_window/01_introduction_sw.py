@@ -21,9 +21,6 @@
 # and divide the sum by ‘5’ to find the average. This is what the algorithm will look like:
 
 # * MARK: - Brute-force algorithm
-from pytest import mark
-
-
 def brutforce_find_averages_of_subarrays(K, arr):
     result = []
     for i in range(len(arr)-K+1):
