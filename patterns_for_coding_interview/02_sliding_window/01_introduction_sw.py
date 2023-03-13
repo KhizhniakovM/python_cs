@@ -23,12 +23,12 @@
 # * MARK: - Brute-force algorithm
 def brutforce_find_averages_of_subarrays(K, arr):
     result = []
-    for i in range(len(arr)-K+1):
+    for i in range(len(arr) - K + 1):
         # find sum of next 'K' elements
         _sum = 0.0
-        for j in range(i, i+K):
+        for j in range(i, i + K):
             _sum += arr[j]
-        result.append(_sum/K)  # calculate average
+        result.append(_sum / K)  # calculate average
 
     return result
 

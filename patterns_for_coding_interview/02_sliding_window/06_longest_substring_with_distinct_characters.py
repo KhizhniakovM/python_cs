@@ -1,4 +1,4 @@
-# Longest Substring with Distinct Characters (hard)
+# Longest Substring with Distinct Characters (medium)
 
 # * MARK: - Problem Statement
 # Given a string, find the length of the longest substring, which has all distinct characters.
