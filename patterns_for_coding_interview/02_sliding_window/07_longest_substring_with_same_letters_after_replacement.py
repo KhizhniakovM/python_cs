@@ -1,4 +1,4 @@
-# Longest Substring with Same Letters after Replacement (hard)
+# Longest Substring with Same Letters after Replacement (medium)
 
 # * MARK: - Problem Statement
 # Given a string with lowercase letters only, if you are allowed to replace no more than k

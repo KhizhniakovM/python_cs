@@ -1,4 +1,4 @@
-# Longest Subarray with Ones after Replacement (hard)
+# Longest Subarray with Ones after Replacement (medium)
 
 # * MARK: - Problem Statement
 # Given an array containing 0s and 1s, if you are allowed to replace no more than ‘k’ 0s with 1s,
