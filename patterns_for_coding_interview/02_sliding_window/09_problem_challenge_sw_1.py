@@ -1,5 +1,5 @@
 # Problem Challenge 1
-# Permutation in a String (hard)
+# Permutation in a String (medium)
 
 # * MARK: - Problem Statement
 # Given a string and a pattern, find out if the string contains any permutation of the pattern.

@@ -1,5 +1,5 @@
 # Problem Challenge 2
-# String Anagrams (hard)
+# String Anagrams (medium)
 
 # * MARK: - Problem Statement
 # Given a string and a pattern, find all anagrams of the pattern in the given string.
