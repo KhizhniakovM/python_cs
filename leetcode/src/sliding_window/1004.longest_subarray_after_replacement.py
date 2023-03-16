@@ -25,8 +25,8 @@ class Solution(unittest.TestCase):
         for window_end in range(len(arr)):
             if arr[window_end] == 1:
                 max_ones += 1
-                        # window_size
-            while window_end - window_start + 1 - max_ones > k:
+
+            while (window_end - window_start + 1) - max_ones > k:
                 if arr[window_start] == 1:
                     max_ones -= 1
                 window_start += 1
