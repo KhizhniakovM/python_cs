@@ -1,7 +1,8 @@
 # Squaring a Sorted Array (easy)
 
 # * MARK: - Problem statement
-# Given a sorted array, create a new array containing squares of all the numbers of the input array in the sorted order.
+# Given a sorted array, create a new array containing squares of all the numbers 
+# of the input array in the sorted order.
 
 # * MARK: - Example 1
 # Input: [-2, -1, 0, 2, 3]
