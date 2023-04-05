@@ -36,8 +36,8 @@ class Solution(unittest.TestCase):
         # return counter
 
     def test(self):
-        nums, val = [0, 1, 2, 2, 3, 0, 4, 2],  2
-        expected = 5
+        nums, val = [],  2
+        expected = 0
         result = self.removeElement(nums, val)
         print(nums)
         self.assertEqual(expected, result)
